@@ -1,0 +1,25 @@
+.pdfCard_Container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.pdf_Box{
+    width: 150px;
+    height: 170px;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #FE5F00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+}
+.topic_name_div{
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,122 @@
+.detailsBox{
+    width: 100%;
+    height:80vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pdfBox{
+    background-color: #FE5F00;
+    width: 20%;
+    height: auto;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 11px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.target_iconBox{
+    width: 141px;
+    display: flex;
+    padding-left: 7px;
+}
+.completeTest, .todayTarget {
+    display: flex;
+    flex-direction: row;
+    width: 670px;
+    height: 161px;
+    background-color: #FFFFFF;
+    border-radius: 11px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.complete_div, .target_div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    text-align: left;
+    width: 80%;
+    justify-content: center;
+
+}
+
+.testHeading, .targetHeading{
+    font-size: 30px;
+    font-family: Arial;
+}
+.testName, .targetName{
+    color: #707070;
+    font-size: 25px;
+    font-family: Arial;
+}
+.leveltext{
+    font-size: 17px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .completeTest, .todayTarget{
+        width: 90vw;
+        height: 150px;
+    }
+    .testHeading, .targetHeading{
+        font-size: 25px;
+    }
+    .testName, .targetName{
+        font-size: 18px;
+    }
+    .leveltext{
+        font-size: 12px;
+    }
+    .detailsBox{
+        height: 60vh;
+    }
+    .pdfBox{
+        width: 30%;
+    }
+
+}
+@media only screen and (min-width: 300px) and (max-width: 450px){
+    /* .detailsBox{ */
+        /* margin-top: 2vh; */
+    /* } */
+    .testHeading, .targetHeading{
+        font-size: 20px;
+    }
+    .testName, .targetName {
+        font-size: 15px;
+    }
+    .leveltext{
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 840px){
+    .completeTest, .todayTarget{
+        width: 75%;
+        height: 120px;
+    }
+    .pdfBox{
+        width: 30%;
+    }
+    .testHeading, .targetHeading{
+        font-size: 20px;
+    }
+    .testName, .targetName {
+        font-size: 18px;
+    }
+    .leveltext{
+        font-size: 12px;
+    }    
+    .detailsBox{
+        height: fit-content;
+        margin-top: 16vh;
+        background-color:#E4E4E4; ;
+    }
+}

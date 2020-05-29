@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.688" height="43.082" viewBox="0 0 41.688 43.082">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fe7f33;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <path id="Icon_feather-paperclip" data-name="Icon feather-paperclip" class="cls-1" d="M39.862,20.4,22.436,37.83a11.384,11.384,0,1,1-16.1-16.1L23.763,4.3A7.589,7.589,0,0,1,34.5,15.037L17.05,32.463A3.795,3.795,0,1,1,11.684,27.1l16.1-16.08" transform="translate(-1.002 -0.082)"/>
+</svg>

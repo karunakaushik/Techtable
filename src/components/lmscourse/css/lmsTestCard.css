@@ -1,0 +1,112 @@
+.testCardContainer{
+    /* width: 100%;
+    height:80vh ; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.testCard_div1, .testCard_div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #FFFFFF; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+/* .testCard_div2{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+} */
+.cardIcon1 {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+.cardIcon2{
+    display: flex;
+    width:30%;
+    justify-content: center;
+}
+.card_Info1, .card_Info2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.cardHeading1, .cardHeading2{
+    text-align: initial;
+    font-size: 24px
+}
+.chapterTestInfo{
+    text-align: initial;
+    color: #707070;
+    font-size: 15px;
+}
+.chapterTargetInfo{
+    text-align: initial;
+    font-size: 17px;
+
+}
+.dropimg_1, .dropimg_2{
+    width: 25%;
+    justify-content: center;
+    display: flex;
+   
+}
+.fixed_testCard_2,.fixed_testCard_1{
+    display: flex;
+    width:450px;
+    background-color: #FFFFFF;
+    height: 141px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.collapse {
+    display: none;
+    padding-top: 1px;
+}
+
+  .collapse.in {
+    display: block;
+    padding-top: 1px;
+
+}
+
+
+
+@media only screen and (max-width: 769px){
+    .testCardContainer{
+        flex-direction: column;
+        
+    }
+    .testCard_div1, .testCard_div2{
+        width: 90vw;
+        /* height: 20vh; */
+        margin-top: 6vh;
+    }
+    .fixed_testCard_1, .fixed_testCard_2{
+        width: 90vw;
+        /* height: 20vh; */
+        margin-top: 6vh;  
+    }
+    .chapterTestInfo{
+        font-size: 15px;
+    }
+    .chapterTargetInfo{
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (min-width: 810px) and (max-width : 1025px){
+    .fixed_testCard_1, .fixed_testCard_2{
+        width: 300px;
+    }
+}

@@ -1,0 +1,92 @@
+.outercontainer_Notes{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.notes_column_1, .notes_column_2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.notes_column_2{
+    margin-top: -15vh;
+}
+.announcement_Notes, .downloads_Notes, .notes_Notes, .resources_Notes, .shareable_resources_Notes {
+    display: flex;
+    margin-top: 3vh;
+    width: 90%;
+    height: 119px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.img_Notes_div_1, .img_Notes_div_2, .img_Notes_div_3, .img_Notes_div_4, .img_Notes_div_5{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.heading_Notes_div_1, .heading_Notes_div_2, .heading_Notes_div_3, .heading_Notes_div_4, .heading_Notes_div_5{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+
+.next_Notes_1, .next_Notes_2, .next_Notes_3, .next_Notes_4, .next_Notes_5 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.head_1, .head_2, .head_3, .head_4, .head_5{
+    font-size: 34px;
+    font-family: Arial;
+}
+.info_1, .info_2, .info_3, .info_4, .info_5{
+    font-size: 25px;
+    color: #707070;
+    font-family: Arial;
+}
+
+
+@media only screen and (max-width: 767px){
+    .outercontainer_Notes{
+        flex-direction: column;
+    }
+    .notes_column_2{
+        margin-top: 0;
+    }
+    .announcement_Notes, .downloads_Notes, .notes_Notes, .resources_Notes, .shareable_resources_Notes {
+        width: 90vw;
+        height: 18vh;
+    }
+    .head_1, .head_2, .head_4, .head_5{
+        font-size: 20px;
+    }
+    .head_3{
+        font-size: 18px;
+    }
+    .info_1, .info_2, .info_3, .info_4, .info_5{
+        font-size: 15px;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 840px){
+    .head_1, .head_2, .head_3, .head_4, .head_5{
+        font-size: 18px;
+    }
+    .info_1, .info_2, .info_3, .info_4, .info_5{
+        font-size: 12px;
+    }
+    /* .notes_column_2{ */
+        /* margin-top: -34vh; */
+   
+    /* } */
+}

@@ -1,0 +1,9 @@
+.sideBarContainer{
+    display: flex;
+    width: 25%;
+    height: 100vh;
+    background-color: #826E6E;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}

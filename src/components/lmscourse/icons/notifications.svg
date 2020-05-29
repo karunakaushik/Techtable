@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63.435" height="75.5" viewBox="0 0 63.435 75.5">
+  <g id="icon_notifications" data-name="icon notifications" transform="translate(2.582 23.731)">
+    <path id="Icon_feather-paperclip" data-name="Icon feather-paperclip" stroke="#6a1f74" d="M45.184,23.049,25.242,42.992A13.028,13.028,0,1,1,6.818,24.568L26.761,4.625A8.685,8.685,0,0,1,39.043,16.908L19.079,36.851a4.343,4.343,0,0,1-6.141-6.141l18.424-18.4" fill="none" transform="translate(-3.585 2.961)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" opacity="0.8"/>
+    <text id="_" data-name="+" transform="translate(34.853 16.269)" fill="#6a1f74" font-size="44" font-family="ArialMT, Arial" opacity="0.8"><tspan x="0" y="0">+</tspan></text>
+  </g>
+</svg>

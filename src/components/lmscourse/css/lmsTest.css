@@ -1,0 +1,27 @@
+.testCard{
+    padding: 2vh;
+}
+/* .testBox{
+    padding-top: 20vh;
+} */
+.testContainer{
+    background: #E4E4E4;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center
+}
+.testBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media only screen and (max-width: 769px){
+
+.testBox{
+    /* padding-top: 15vh; */
+
+}
+
+}

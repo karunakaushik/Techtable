@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.206" height="33.471" viewBox="0 0 50.206 33.471">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe5f00;
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-video" data-name="Icon awesome-video" class="cls-1" d="M29.3,4.5H4.166A4.166,4.166,0,0,0,0,8.666V33.8a4.166,4.166,0,0,0,4.166,4.166H29.3A4.166,4.166,0,0,0,33.471,33.8V8.666A4.166,4.166,0,0,0,29.3,4.5ZM45.813,7.786l-9.553,6.59V28.1l9.553,6.581a2.8,2.8,0,0,0,4.393-2.249V10.035A2.8,2.8,0,0,0,45.813,7.786Z" transform="translate(0 -4.5)"/>
+</svg>

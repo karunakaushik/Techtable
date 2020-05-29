@@ -1,0 +1,130 @@
+.outercontainer{
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    flex-direction: column;
+    background-color:#E4E4E4;
+
+}
+
+
+.box1, .boxempty { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    /* height: 10vh; */
+
+}
+.box1{
+    flex-direction: column;
+}
+
+.coursecard{
+    width: 100%;
+    height: 81.27px;
+    color: white;
+    background-color: #A34EAE;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.coursetext{
+    font-size: 29px;
+    font-family: Arial;
+    font-weight: bold;
+    
+}
+.videocard, .paperclipcard, .listcard, .targetcard{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 88px;
+    height: 86px;
+    cursor: pointer;
+}
+/* .listcard{
+    margin-right: 4vw;
+}
+.paperclipcard{
+    margin-right: -4vw;
+
+} */
+.lmsBar{
+    display: flex;
+    width:75%;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2vw;
+    background-color: #FFFFFF;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75vw;
+    height: 10vh;
+}
+.text{
+    font-size: 15px;
+}
+.progress-bar{
+    width: 70%;
+    /* background-color: #FE5F00; */
+
+    
+}
+.progress{
+    width: 100%;
+    margin-top: 10px;
+    /* height: 20px; */
+}
+
+
+@media only screen and (max-width: 769px){
+    .lmsBar{
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        /* margin-top: 15vh; */
+        padding: 0;
+        height: fit-content;
+
+    }
+    .box1, .box2{
+        width: 95vw;
+        margin-top: 3vh;
+        height: auto;
+    }
+    .videocard, .paperclipcard, .listcard, .targetcard {
+        margin: 0;
+        width: 64px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .coursecard, .progress{
+        width: 90vw;
+    }
+
+}
+@media only screen and (max-width: 600px) and (min-width: 767px){
+    /* .lmsBar{
+
+    } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 840px)   {
+    .coursetext{
+        font-size: 20px;
+           
+       }
+       .lmsBar{
+           height: auto;
+       }
+}

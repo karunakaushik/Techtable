@@ -1,0 +1,58 @@
+.form{
+    margin-left:60px;
+}
+.heading12{
+   margin-top: 170px ;
+}
+
+   .heading12 p{
+color:gray;
+font-weight: bold;
+font-size: 12px;
+margin-top:5px;
+   }
+.forget{
+    font-size: 20px;
+    
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top:5px;
+}
+.forget span{
+    color:purple
+}
+hr{
+    margin:auto;
+    width:8%;
+}
+
+.input1{
+    margin:auto;
+
+
+}
+.input2{
+    margin:auto;
+}
+
+.btn{
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   width:20%;
+  
+  
+margin:auto;
+   color:white;
+   border-radius: 50px;
+
+}
+#text{
+    color:white;
+
+}
+@media (max-width:568px) {
+    #text{
+font-size:8px;
+    }
+}

@@ -1,0 +1,32 @@
+.pdf_Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4%;
+}
+.pdf_div{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    justify-content: space-evenly;
+}
+.pdftestHeading{
+    font-family: Arial;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 3%;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+@media only screen and (max-width: 767px){
+
+    .pdf_div{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .pdf_Container{
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,177 @@
+.footer
+{
+  background: #696969;
+  height: 70px;
+  width: 100%;
+}
+.dash_links
+{
+  color: white;
+  
+  font-size: 17px;
+  margin-left:160px;
+}
+.dash_links a {
+  color: #fff;
+  opacity: .6;
+  text-decoration: underline;
+  margin:0px 20px;
+}
+.dash_links {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  margin-top: 30px;
+  font:16px;
+
+}
+.started 
+{
+  height: 300px;
+  width: 100%;
+  background: #8f54e5;
+
+}
+.box
+{
+  height: 200px;
+  width: 40%;
+  background: #8f54e5;
+  margin-left: 400px;
+  margin-top: 90px;
+  font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+}
+.lhed
+{
+  text-align: center;
+}
+.lhed1
+{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+.landing-button
+
+{
+   border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 210px;
+  border-color: #fff;
+    border-radius: 5px;
+  background: #905dfa;
+    font-weight: bold;
+}
+.landing-button1
+
+{
+   border: none;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 210px;
+  border-color: #fff;
+    border-radius: 5px;
+  background: white;
+    font-weight: bold;
+}
+body
+{
+   font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+}
+.student
+{
+  margin-left: 90px;
+  margin-top: 20px;
+}
+.teachers
+{
+  margin-left: 90px;
+ height: 60px;
+ width: 60px;
+}
+.schools
+{
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.parents
+{
+  margin-left: 90px;
+}
+.case-study
+{
+  height: 400px;
+  width: 100%;
+  background: white;
+}
+.left1
+{
+  height: 100%;
+  width: 40%;
+   background:  linear-gradient(#d290f4,#ffffff);
+  float: left;
+   border-radius: 12px;
+   margin-left: 100px;
+}
+.right1
+{
+  height: 100%;
+  width: 40%;
+  background:  linear-gradient(#d290f4,#ffffff);
+    float: right;
+   border-radius: 12px;
+   margin-right: 100px;
+}
+.case-study-hed
+{
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.case-study-para
+{
+  font-size: 21px;
+  margin-left: 10px;
+  text-align: justify;
+  line-height: 30px;
+  color: black;
+  margin-right: 20px;
+}
+.tab
+{
+  height: 600px;
+  width: 100%;
+}
+.tab-image
+{
+  margin-left: 80px;
+}
+.tab-hed
+{
+  height: 200px;
+  width: 100%;
+font-size: 35px;
+text-align: center;
+}
+.para-tab
+{
+  font-size: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  line-height: 30px;
+  color: grey;
+
+}

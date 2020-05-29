@@ -1,0 +1,51 @@
+.lmsMainContainer{
+    /* width:100vw; */
+    min-height:100vh;
+    display:flex;
+    position:relative;
+    /* overflow-x: hidden; */
+}
+.lmsrightContainer{
+    width: 75%;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #E4E4E4;
+}
+.lmsleftContainer{
+    width: 25%;
+}
+.lmsMain_NavBar{
+  display: flex;
+  height: 20vh;
+  /* width: 100%; */
+}
+.lms_components{
+  display: flex;
+  height: 80vh;
+  /* width: 100%; */
+  justify-content: center;
+
+}
+@media(max-width:768px){
+    .lmsrightContainer{
+        width: 100%;
+        /* margin-top:48px; */
+    }
+    .lms_components{
+      height: auto;
+    }
+    .lmsMain_NavBar{
+        height: 35vh;
+    }
+    .lmsleftContainer{
+        display: none;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 366px){
+    .lms_components{
+        margin-top: 5vh;
+    }
+}
