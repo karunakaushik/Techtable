@@ -1,0 +1,74 @@
+.VideoPagouterContainer{
+    display: flex;
+    /* width: 100vw; */
+    flex-direction: row;
+}
+.video_div_column_1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.subtopic1,
+.subtopic2,
+.subtopic3{
+    cursor: pointer;
+    /* margin-right: 6%; */
+    padding: 6px 15px 0px 0px;
+
+}
+.subtopic_list_div{
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+}
+.chapter_name_video{
+    text-align: left;
+    color: #767676;
+    padding-left: 6%;
+    font-size: 45px;
+    font-family: Arial;
+}
+.video_div_column_2{
+    display: flex;
+    width: 70%;
+    height: 100vh;
+    flex-direction: column;
+}
+.videoDiv_pdfDiv{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px gray;
+}
+.extraInfo_videoPage{
+    height: 50%;
+    display: flex;
+}
+.react-sanfona-item-title{
+    font-size: 23px;
+}
+.react-sanfona-item{
+    padding: 10px;
+}
+@media only screen and (max-width: 767px){
+    .VideoPagouterContainer{
+        flex-direction: column;
+    }
+    .video_div_column_1{
+        width: 100%;
+        height: auto;
+    }
+    .video_div_column_2{
+        width: 100%;
+    }
+    .react-sanfona-item-title{
+        font-size: 18px;
+    }
+    .subtopic_list_div{
+        font-size: 15px;
+    }
+}

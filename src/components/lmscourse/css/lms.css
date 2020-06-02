@@ -38,7 +38,7 @@
       height: auto;
     }
     .lmsMain_NavBar{
-        height: 35vh;
+        height: 40vh;
     }
     .lmsleftContainer{
         display: none;
@@ -47,5 +47,15 @@
 @media only screen and (min-width: 300px) and (max-width: 366px){
     .lms_components{
         margin-top: 5vh;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width:668px){
+         .lmsMain_NavBar{
+             height: 70vh;
+         }
+}
+@media only screen and (min-width: 700px) and (max-width:737px){
+    .lmsMain_NavBar{
+        height: 61vh;
     }
 }

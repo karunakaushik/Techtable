@@ -20,9 +20,9 @@ export default class LMSMain extends Component{
                     </div>
                     <div className="lms_components">
                           {/* <LMSNotes /> */}
-                          {/* <LMSTest /> */}
+                          <LMSTest />
                           {/* <LMSPdf /> */}
-                          <LMSInitialDetial />
+                          {/* <LMSInitialDetial /> */}
                     </div>
                     
                 </div>

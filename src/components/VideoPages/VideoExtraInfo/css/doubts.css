@@ -1,0 +1,87 @@
+.doubt_outer_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+.bottom_Chat_bar_div{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    outline: none !important;
+    border: none;
+}
+.enter_message{
+    width: 75%;
+    height: 50px;
+    font-size: 20px;
+    color:  #767676;
+    border: none;
+    outline: none !important;
+
+    /* background-color: white; */
+}
+.chat_bar{
+    display: flex;
+    flex-direction: row;
+    outline: none !important;
+    justify-content: space-around;
+}
+.imgDiv{
+    width: 65%;
+}
+.chat_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.inComingMsgBox{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+.incoming_msg{
+    background: #E4E1E1;
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.incomingmsg_inbox{
+    display: flex;
+    justify-content: flex-start;
+}
+.userPhoto{
+    width: 75%;
+}
+.outGoingMsgBox{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+.outGoing_msg{
+    background: #E4E1E1;
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outGoingmsg_inbox{
+    display: flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 767px){
+    .enter_message{
+        font-size: 13px;
+    }
+    .incoming_msg, .outGoing_msg{
+        font-size: 12px;
+    }
+}

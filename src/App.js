@@ -6,6 +6,7 @@ import Home from './components/homepage/Home';
 // import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import LMSMain from './components/lmscourse/lms';
+import VideoMainPage from './components/VideoPages/videoMainPage';
 class App extends Component{
   constructor(props)
   {
@@ -36,7 +37,7 @@ class App extends Component{
         {/* <Header /> */}
         {/* {this.state.user ? (<Home/>) : (<Login/>)} */}
         {/* <Home /> */}
-        <LMSMain />      
+        <VideoMainPage />
         {/* <Footer />       */}
       </div>
     );
