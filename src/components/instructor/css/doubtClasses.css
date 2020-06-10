@@ -86,7 +86,7 @@
 .Instructor_reply_Div_1{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     padding-top: 20px;
 
 }
@@ -125,5 +125,14 @@
     .lectureVideo_1{
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .Instructor_reply_Div_1{
+        width: 80%;
+    }
+    .instructorImgDiv{
+        width: 20%;
+    }
+    .reportBtn_Doubt{
+        margin: 0;
     }
 }
