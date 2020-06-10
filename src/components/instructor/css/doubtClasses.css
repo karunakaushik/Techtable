@@ -1,0 +1,129 @@
+.doutOuterBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.boxOfDoubt1, .boxOfDoubt2, .boxOfDoubt3, .boxOfDoubt4{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+.studentImgDiv{
+    display: flex;
+    width: 7%;
+    justify-content: center;
+    align-items: self-end;
+    padding-top: 20px;
+
+
+}
+.Student_Doubts_Div_1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 20px;
+}
+.questionsDiv_1{
+    text-align: left;
+    font-family: arial;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.postedDetails_1, .replyDetails_1{
+    display: flex;
+    flex-direction: row;
+}
+.allbuttonsDiv{
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.replyBtn_Doubt, .deleteBtn_Doubt, .reportBtn_Doubt, .editBtn_Doubt {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    font-family: Arial;
+    margin-right: 20px;
+    font-size: 16px;
+    outline: 0 !important;
+}
+.clearDoubt_Btn_Doubt{
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    width: 110px;
+    height: 30px;
+    font-family: Arial;
+    margin-right: 20px;
+    font-size: 16px;
+    outline: 0 !important;
+}
+.lectureVideo_1{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 20px; */
+}
+.lectureName_Doubt{
+    font-size: 25px;
+    color: #3F3E3E;
+    margin: 0;
+}
+.solvedDoubtImgDiv{
+    align-items: flex-start;
+    display: flex;
+    padding-bottom: 20px;
+}
+.Instructor_Div{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+}
+.Instructor_reply_Div_1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+
+}
+.instructorImgDiv{
+    width: 10%;
+    padding-top: 20px;
+}
+.replyOfDoubtsDiv_1{
+    text-align: left;
+    font-family: arial;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.allbuttonsDivOfInstructor{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 769px){
+    .boxOfDoubt1, .boxOfDoubt2, .boxOfDoubt3, .boxOfDoubt4{
+        flex-direction: column;
+    }
+    .studentImgDiv, .Student_Doubts_Div_1, .lectureVideo_1{
+        width: 100%;
+    }
+    .Student_Doubts_Div_1{
+        justify-content: center;
+        align-items: center;
+    }
+    .questionsDiv_1{
+        text-align: justify;
+        width: 90%;
+    }
+    .lectureVideo_1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

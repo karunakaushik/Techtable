@@ -1,0 +1,118 @@
+.outerContainer_Doubt{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.div1_doubt{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 125px;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.heading_ClearDoubt{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    padding: 20px;
+    margin: 0;
+
+}
+
+.classes_Nav{
+font-size: 17px;
+display: flex;
+
+}
+
+.doubt_class{
+    color: black;
+    font-family: Arial;
+    padding: 20px;
+    /* text-decoration: none; */
+}
+
+.sort_btn_div{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-bottom: solid black 1px;
+    border-left: solid black 1px;
+}
+.sortDoubtButton{
+    border-radius: 19px;
+    border: none;
+    outline: none !important;
+    background-color: #EBEBEB;
+    height: 35px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20%;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sortLectureButton{
+    border-radius: 19px;
+    border: none;
+    outline: none !important;
+    background-color: #EBEBEB;
+    height: 35px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20%;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.eachClasses_Doubt{
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+    border-left: solid black 1px;
+
+}
+
+.doubt_class::after{
+    content: '';
+    display: block;
+    width: 0;
+    margin-top:2px;
+    height: 4px;
+    background: #065FD4;
+    /* color: blue; */
+    transition: width .5s;
+}
+
+.doubt_class:hover::after{
+    width:100%;
+}
+
+
+
+
+@media only screen and (max-width: 769px){
+    .doubt_class{
+        padding: 10px;
+    
+    }
+    .sort_btn_div{
+        flex-direction: column;
+    }
+    .sortDoubtButton, .sortLectureButton{
+        width: 80%;
+        margin-left: 0;
+    }
+    .sortDoubtButton{
+        margin-bottom: 30px ;
+    }
+    .div1_doubt{
+        height: 115px;
+    }
+     
+}
