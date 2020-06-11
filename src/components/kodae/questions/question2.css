@@ -1,0 +1,11 @@
+.btn-lg{
+    margin-top:15px;
+   
+    box-shadow: 3px 3px #e6e6e6;
+}
+.btn-lg:hover{
+    background-color: #ff751a;
+}
+.btn-block{
+    background-color: #e6e6e6;
+}
