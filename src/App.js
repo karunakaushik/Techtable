@@ -5,7 +5,7 @@ import Login from './components/signin/loginn';
 import Home from './components/homepage/Home';
 // import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import InstructorDoubtPage from './components/instructor/doubtPage/doubt';
+import ATPMainPage from './components/instructor/ATPPages/ATPmainPage';
 class App extends Component{
   constructor(props)
   {
@@ -36,7 +36,7 @@ class App extends Component{
         {/* <Header /> */}
         {/* {this.state.user ? (<Home/>) : (<Login/>)} */}
         {/* <Home /> */}
-        <InstructorDoubtPage />
+        <ATPMainPage />
         {/* <Footer />       */}
       </div>
     );
