@@ -1,0 +1,40 @@
+form{
+    border:1px solid rgb(230, 229, 229);
+    border-radius: 20px;
+    margin-top:80px;
+    width:95%;
+    margin-left: 50px;
+    box-shadow: 2px 2px #e4dcdc;
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+.col-form-label{
+    font-weight: bold;
+    font-size: 5px;
+}
+.nav-link {
+    background-color:#fefefe;
+    color:black;
+    margin-top:7px;
+}
+.nav-item{
+    margin-left: 10px;
+    margin-top:7px;
+    width:180px;
+}
+.nav{
+    border-right:1px solid lightgray;
+    border-bottom:1px solid lightgray ;
+    height:550px;
+   
+}
+.nav-link:hover{
+    background-color: #FBA374;
+
+}
+@media(max-width:800px){
+    .nav-item{
+        width:100%;
+
+    }
+}
