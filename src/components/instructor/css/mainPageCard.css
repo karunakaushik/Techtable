@@ -1,0 +1,143 @@
+.card_container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.serialNumberDIv{
+    width: 5%;
+}
+.card_Div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+}
+.card_subDiv{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.videoDiv{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lectureName_ATP{
+    font-size: 25px;
+    margin: 0;
+    color: #3F3E3E;
+    font-family: Arial;
+}
+.extra_Info_ATP{
+    font-size: 15px;
+    margin: 0;
+    color: #3F3E3E;
+    font-family: Arial;
+}
+.testDiv ,.practiceDiv{
+    display: flex;
+    flex-direction: row;
+
+}.addnewTest, .addnewPractice{
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    width: 150px;
+    font-size: 13px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 25px;
+    outline: 0 !important;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.listIcon{
+    width: 8%;
+}
+.editButtonDiv{
+    width: 10%;
+}
+.editButton{
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    width: 62px;
+    font-size: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 25px;
+    outline: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* .dateATPBox{
+
+} */
+.dateDivATP{
+    font-family: Arial;
+  
+}
+.modifiedDateATP{
+    color: #707070;
+    font-size: 15px;
+    font-family: Arial;
+}
+@media only screen and (max-width: 769px){
+    .videoDiv{
+        flex-direction: column;
+        width: 30%;
+    }
+    .lectureName_ATP{
+        font-size: 12px;
+    }
+    .extra_Info_ATP{
+        font-size: 8px;
+    }
+    .lectDivImg{
+        width: 50%;
+    }
+    .addnewTest,.addnewPractice{
+        width: 85px;
+        height: 17px;
+        font-size: 7px;
+    }
+    .dateDivATP{
+        font-size: 10px;
+    }
+    .modifiedDateATP{
+        font-size: 8px;
+    }
+    .editButton{
+        width: 50px;
+       font-size: 10px;
+       height: 17px;
+    }
+    .editImgDIv{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1160px )and (min-width: 770px){
+    .lectDivImg{
+        width: 50%;
+    }
+    .lectureName_ATP{
+        font-size: 15px;
+    }
+    .extra_Info_ATP{
+        font-size: 10px;
+    }
+    .modifiedDateATP{
+        font-size: 10px;
+    }
+    .dateDivATP{
+        font-size: 15px;
+    }
+}

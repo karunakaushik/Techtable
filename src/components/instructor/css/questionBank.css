@@ -1,0 +1,434 @@
+.backButton{
+    background-color: #065FD4;
+    display: flex;
+    width: 75px;
+    height: 35px;
+    border: none;
+    outline: 0 !important;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.postButton{
+    background-color: #065FD4;
+    display: flex;
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: 0 !important;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .outerContainer_QB{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  .navbox_QB{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: solid 1px black;
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+  .atpDiv_QB{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .badgesDiv_QB{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .assign_QB, .test_QB, .pract_QB{
+      display: flex;
+      align-items: baseline;
+  }
+.assignHeading, .testHeading, .practHeading{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    margin-right: 20px;
+}
+.nav_editorBox{
+    height: fit-content;
+    border-bottom: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.editorinnerCard{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  justify-content: space-evenly;
+  padding: 6px;
+}
+.editorinnerCard button{
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.editorinnerCard img {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.questionBankBox{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* height: 77vh; */
+    justify-content: center;
+    background-color: #F2EEEE;
+    overflow-y: scroll;
+}
+.innerDivOfQB{
+    background-color: white;
+    width: 60%;
+    margin-top: 25px;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+
+}
+.marksDivQB{
+    width: 20%;
+    right: 0;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 45px;
+}
+.totalMarksdiv{
+    background-color: blue;
+    width: 60%;
+    height: 39px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.remainMarksdiv{
+    width: 60%;
+    height: 39px;
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    background-color:  green;
+}
+.headerOfInnerDiv{
+    border-bottom: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.subHeaderQB{
+    display: flex;
+    align-items: baseline;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.heading_QB{
+    margin: 0;
+    font-size: 30px;
+    margin-right: 30px;
+}
+.detailsOfQBDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    padding: 20px;
+}
+.testpassorfailmessage{
+    background-color: #F2EEEE;
+    color: black;
+    outline: 0 !important;
+    width: 90%;
+    height: 10vh;
+    border: none;
+    /* padding-top: 26px; */
+    margin-top: 10px;
+}
+.detailshead_QB{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial;
+  line-height: 30px;
+  color: black;
+  margin: 0;
+  text-align: justify;
+}
+.submessage{
+  color: #707070;
+  margin: 0;
+  font-family: Arial;
+}
+.detailsSubDiv1, .detailsSubDiv2, .detailsSubDiv3{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25vh;
+  align-items: flex-start;
+}
+.datetimepickerDiv{
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  /* margin-top: 15px; */
+}
+.inputTimeSet{
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  border: solid 1px #707070;
+  margin-left: 8%;
+  margin-top: 5%;
+  width: 160px;
+  height: 40px;
+  outline: 0 !important;
+}
+.inputDateSet{
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  border: solid 1px #707070;
+  margin-left: 8%;
+  margin-top: 5%;
+  outline: 0 !important;
+}
+
+.textfield{
+     width: 100px;
+     margin-left: 10px;
+     /* border: solid 1px black; */
+/* font-size: 80px; */
+}
+.detailsheadSet_QB{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial;
+  line-height: 30px;
+  color: black;
+  margin: 0;
+  text-align: justify;
+  margin-right: 20px;
+}
+.countdownDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 15vh;
+  align-items: flex-start;
+}
+.setTitle{
+  display: flex;
+  align-items: baseline;
+}
+.scoreDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  height: 15vh;
+}
+.percentDiv{
+  padding-left: 10%;
+}
+.passmsgDiv, .failmsgDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  height: 25vh;
+}
+
+
+
+@media only screen and (max-width: 769px){
+    .outerContainer_QB{
+      height: auto;
+    }
+  .navbox_QB{
+    flex-direction: column;
+    height: fit-content;
+  }
+  .atpDiv_QB, .badgesDiv_QB{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .atpDiv_QB{
+    padding-top: 15px;
+  }
+  .assignHeading, .testHeading, .practHeading{
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  .postButton{
+    height: 20px;
+    width: 55px;
+    font-size: 8px;
+  }
+  .postButton img{
+    width: 15%;
+  }
+  .backButton{
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .backButton img {
+    width: 20%;
+  }
+  .crown_QB img {
+    width: 50%;
+  }
+  .badge_QB img {
+    width: 40%;
+  }
+  .star_QB img {
+    width: 50%;
+  }
+  .questionBankBox{
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+  }
+  .innerDivOfQB{
+    width: 95%;
+  }
+  .marksDivQB{
+    position: unset;
+  }
+  .detailshead_QB, .detailsheadSet_QB{
+    font-size: 18px;
+  }
+  .inputTimeSet{
+    height: 35px;
+    width: 100px;
+    font-size: 13px;
+  }
+  .inputDateSet{
+    height: 35px;
+    width: 130px;
+    font-size: 13px;
+  }
+  .detailsOfQBDiv{
+    width: 100%;
+  }
+  .datetimepickerDiv{
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  .detailsSubDiv1, .detailsSubDiv2, .detailsSubDiv3,.countdownDiv, .scoreDiv,.passmsgDiv, .failmsgDiv{
+    min-height: fit-content;
+  }
+  .marksDivQB{
+    width: 100%;
+  }
+  .totalMarksdiv, .remainMarksdiv{
+    width: 50%;
+  }
+  .editorinnerCard{
+    display: block;
+    width: 100%;
+  }
+  .editorinnerCard button{
+    padding-right: 7px;
+  }
+  .editorinnerCard img{
+    padding-right: 7px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width : 1300px){
+  .assignHeading, .practHeading, .testHeading{
+    font-size: 20px;
+  }
+}

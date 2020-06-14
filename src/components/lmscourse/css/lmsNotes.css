@@ -46,11 +46,11 @@
     justify-content: center;
 }
 .head_1, .head_2, .head_3, .head_4, .head_5{
-    font-size: 34px;
+    font-size: 29px;
     font-family: Arial;
 }
 .info_1, .info_2, .info_3, .info_4, .info_5{
-    font-size: 25px;
+    font-size: 22px;
     color: #707070;
     font-family: Arial;
 }
@@ -68,6 +68,30 @@
         height: 18vh;
     }
     .head_1, .head_2, .head_4, .head_5{
+        font-size: 25px;
+    }
+    .head_3{
+        font-size: 20px;
+    }
+    .info_1, .info_2, .info_3, .info_4, .info_5{
+        font-size: 15px;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 840px){
+    .head_1, .head_2, .head_3, .head_4, .head_5{
+        font-size: 17px;
+    }
+    .info_1, .info_2, .info_3, .info_4, .info_5{
+        font-size: 12px;
+    }
+    /* .notes_column_2{ */
+        /* margin-top: -34vh; */
+   
+    /* } */
+}
+@media only screen and (min-width: 841px) and (max-width: 1310px){
+    .head_1, .head_2, .head_4, .head_5{
         font-size: 20px;
     }
     .head_3{
@@ -77,16 +101,4 @@
         font-size: 15px;
     }
 
-}
-@media only screen and (min-width: 768px) and (max-width: 840px){
-    .head_1, .head_2, .head_3, .head_4, .head_5{
-        font-size: 18px;
-    }
-    .info_1, .info_2, .info_3, .info_4, .info_5{
-        font-size: 12px;
-    }
-    /* .notes_column_2{ */
-        /* margin-top: -34vh; */
-   
-    /* } */
 }

@@ -38,7 +38,7 @@
       height: auto;
     }
     .lmsMain_NavBar{
-        height: 40vh;
+        height: fit-content;
     }
     .lmsleftContainer{
         display: none;
@@ -51,11 +51,11 @@
 }
 @media only screen and (min-width: 500px) and (max-width:668px){
          .lmsMain_NavBar{
-             height: 70vh;
+             height: fit-content;
          }
 }
 @media only screen and (min-width: 700px) and (max-width:737px){
     .lmsMain_NavBar{
-        height: 61vh;
+        height: fit-content;
     }
 }

@@ -60,6 +60,7 @@
     border: none;
     font-size: 15px;
     font-weight: 600;
+    outline: 0 !important;
     /* font-family: Noto sans; */
 
 }
@@ -72,11 +73,21 @@
         width: 120px;
     }
 }
-@media only screen and (min-width: 810px) and (max-width : 1025px){
+@media only screen and (min-width: 770px) and (max-width : 819px){
+    .challenge_Card_Container{
+        width: 245px;
+    }
+}
+@media only screen and (min-width: 820px) and (max-width : 1025px){
     .challenge_Card_Container{
         width: 294px;
     }
     .search_button, .challenge_button{
         width: 120px;
+    }
+}
+@media only screen and (min-width: 1026px) and (max-width : 1255px){
+    .challenge_Card_Container{
+        width: 345px;
     }
 }

@@ -105,8 +105,21 @@
     
 }
 
-@media only screen and (min-width: 810px) and (max-width : 1025px){
+@media only screen and (min-width: 770px) and (max-width : 819px){
+    .fixed_testCard_1, .fixed_testCard_2{
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 820px) and (max-width : 1025px){
     .fixed_testCard_1, .fixed_testCard_2{
         width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1026px) and (max-width : 1255px){
+    .fixed_testCard_1, .fixed_testCard_2{
+        width: 350px;
+        height:130px ;
     }
 }
