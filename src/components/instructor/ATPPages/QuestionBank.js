@@ -101,18 +101,21 @@ render() {
                    <div className="nav_editorBox">
                        <div className="editorinnerCard">
                            <button>12 <img src={DropIcon} alt="DropIcon" /></button> 
+                           <div className="verticalLine" />
                            <img src={DoubleTTIcon} alt="DoubleTT" />
                            <button> <b>B</b></button>
                            <button> <i>I</i></button>
                            <button><u>U</u></button>
                            <button> <b>A</b><img src={DropIcon} alt="DropIcon" /></button>
                            <button> X<sup>2</sup></button>
-                           <button>X<sub>2</sub></button>                     
+                           <button>X<sub>2</sub></button>  
+                           <div className="verticalLine" />
                            <img src={TextAlignIcon1} alt="TextAlignIcon1" />
                            <img src={TextAlignIcon2} alt="TextAlignIcon2" />
                            <img src={TextAlignIcon3} alt="TextAlignIcon3" />
                            <img src={Bulleticon1} alt="Bulleticon1" />
                            <img src={Bulleticon2} alt="Bulleticon2" />
+                           <div className="verticalLine" />
                            <img src={GalleryIcon} alt="GalleryIcon" />
                            <img src={PdfIcon} alt="PdfIcon" />
                            <img src={VideoIcon} alt="VideoIcon" />

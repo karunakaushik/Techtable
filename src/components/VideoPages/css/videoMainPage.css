@@ -47,6 +47,7 @@
 .extraInfo_videoPage{
     height: 50%;
     display: flex;
+    flex-wrap: wrap;
 }
 .react-sanfona-item-title{
     font-size: 23px;
