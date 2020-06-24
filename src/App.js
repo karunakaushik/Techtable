@@ -6,6 +6,7 @@ import Home from './components/homepage/Home';
 // import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import LMSMain from './components/lmscourse/lms';
+import SignUp from './components/signup/Signup';
 class App extends Component{
   constructor(props)
   {
@@ -33,11 +34,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        {/* <Header /> */}
-        {/* {this.state.user ? (<Home/>) : (<Login/>)} */}
-        {/* <Home /> */}
-         <LMSMain />
-        {/* <Footer />       */}
+        <SignUp />
       </div>
     );
   }

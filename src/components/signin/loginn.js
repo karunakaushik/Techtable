@@ -4,8 +4,9 @@ import TextField from '@material-ui/core/TextField';
 import './loginn.css';
 import './nav.css';
 import Button from '@material-ui/core/Button';
+import LogoKodate from './img/logoKodate.svg'
 import fire from "../../config/fire";
-
+import Arrow from './img/arrow.svg'
 
 
 class Login extends Component {
@@ -52,7 +53,13 @@ class Login extends Component {
              <Fragment>
                  <Navbarr/>
              </Fragment>  */}
-             <Fragment>           
+             <Fragment>
+
+                 <div className="outerContainer"> 
+                 <div className="logoDivSignin">
+                    <img src={LogoKodate} alt="LogoKodate" />
+                  </div>  
+                  <div className="formbox">        
            <div className="form" >
                <div className="heading12">
                    <h2>Login</h2>
@@ -83,14 +90,13 @@ class Login extends Component {
            /></div>
            <br/>
            <div className="btn">
-           <Button variant="contained" className="btn"
+           <button 
            onClick={this.login}
-           ><span id="text">
- CONTINUE</span>
-</Button>
+           ><img src={Arrow} alt="Google" /> &nbsp; CONTINUE</button>
            </div>
            </div>
-          
+           </div>
+           </div>
          </Fragment>
          </Fragment>
            

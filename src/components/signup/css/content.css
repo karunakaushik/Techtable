@@ -1,0 +1,36 @@
+  
+.hobbyCard
+ {
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  max-height: 35vh;
+  -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+
+.hobbyBox {
+  margin: 20px;
+  width: 20px;
+  height: 120px;
+}
+
+.hobbyImage{
+    width: 40%;
+    height: 40%;
+}
+.hobbyButton{
+    background-color: #ffffff;
+    color: black;
+}
+
+.hobbyContainer {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.hobbyContainer > div {
+  flex-basis: calc(33.3% - 40px);
+}

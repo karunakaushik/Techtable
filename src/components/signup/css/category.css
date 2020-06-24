@@ -1,0 +1,36 @@
+  
+.gradeCard
+{
+
+ background-color: #ffffff;
+ border-radius: 10px 10px 10px 10px;
+ overflow: hidden;
+ max-height: 35vh;
+ -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+ box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+
+.gradeBox {
+ margin: 20px;
+}
+
+.gradeImage{
+   width: 60%;
+   height: 60%;
+}
+.gradeButton{
+   background-color: #ffffff;
+   color: black;
+}
+
+.gradeContainer {
+ min-height: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+
+}
+
+.gradeContainer > div {
+ flex-basis: calc(33.3% - 60px);
+}

@@ -1,27 +1,46 @@
 import React, {Component} from 'react';
-
+import fire from ".././../config/fire";
+import navafterlogin from './navafterlogin';
+import navbeforelogin from './navbeforelogin';
 import './nav.css';
-// import   './logo.png';
+class Navbarr extends Component{
+  constructor(props)
+  {
+    super(props);
+    this.state={
+      user : {}
+    }
+  }
+  componentDidMount()
+  {
+    this.authListener();
+  }
+  authListener(){
+    fire.auth().onAuthStateChanged((user)=>{
+      if(user)
+      {
+        this.setState({user})
+      }
+      else{
+        this.setState({user : null})
+      }
+    })
+  }
 
-
-
-export class Navbarr extends Component{
   render(){
-    return(
-      <div id="main">
-        <nav>
-          {/* <img src="logo.png"/> */}
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Learn More</a></li>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
+      
+        return(
+          <div id="Navbarr">
+                    {this.state.user ? (<navafterlogin/>) : (<navbeforelogin/>)}
 
-    );
+          </div>
+    
+        );
+      
+    
 
   }
 
 }
+
+export default Navbarr;

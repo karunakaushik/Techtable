@@ -1,8 +1,16 @@
 import React, { Component } from "react";
-import "./css/signup.css";
+import "./signup.css";
 import { FontAwesomeIcon } from "react-fontawesome";
-import { faEye } from 'react-fontawesome'
-
+import { faEye } from 'react-fontawesome';
+import fire from "../../config/fire";
+import firebase from 'firebase';
+import Login from '../signin/Login';
+import { Route, Link, BrowserRouter } from 'react-router-dom'
+import LogoKodate from './img/logoKodate.svg'
+import Google from './img/google.svg'
+import FaceBook from './img/icons.svg'
+import Arrow from './img/arrow.svg'
+import Navbeforelogin from "../signin/navbeforelogin";
 
 const formValid = ({ formErrors, ...rest }) => {
   let valid = true;
@@ -21,121 +29,161 @@ const formValid = ({ formErrors, ...rest }) => {
 };
 
 class SignUp extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      name: null,
-      phoneNo: null,
-      password: null,
-      formErrors: {
-        name: "",
-        phoneNo: "",
-        password: ""
-      }
-    };
+  constructor(props)
+    {
+        super(props);
+        this.login = this.login.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.signup = this.signup.bind(this);
+        this.state={
+            email : "",
+            password : "",
+            name:"",
+            mobile:" "
+        }
+    }
+    Gsignin(){
+      var base_provider = new firebase.auth.GoogleAuthProvider()
+      firebase.auth().signInWithPopup(base_provider).then((res)=>{console.log('success!!');
+  console.log(res);
+      alert('success');
+  })
+      .catch((error)=>{
+          console.log('failed!!');
+          console.log(error);})
   }
 
-  handleSubmit = e => {
-    e.preventDefault();
+  facebookSignin() {
+    var provider = new firebase.auth.FacebookAuthProvider();
 
-    if (formValid(this.state)) {
-      console.log(`
-        --SUBMITTING--
-        Name: ${this.state.name}
-        phoneNo: ${this.state.phoneNo}
-        Password: ${this.state.password}
-      `);
-    } else {
-      console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
+    firebase.auth().signInWithPopup(provider)
+    
+    .then(function(result) {
+       var token = result.credential.accessToken;
+       var user = result.user;
+     
+       console.log(token)
+       console.log(user)
+    }).catch(function(error) {
+       console.log(error.code);
+       console.log(error.message);
+    });
+ }
+  
+    login(e){
+        e.preventDefault();
+        fire.auth().signInWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
+            console.log(u)
+        }).catch((err)=>{
+            console.log(err);
+        })
     }
-  };
-
-  handleChange = e => {
-    e.preventDefault();
-    const { name, value } = e.target;
-    let formErrors = { ...this.state.formErrors };
-
-    switch (name) {
-      case "firstName":
-        formErrors.name =
-          value.length < 3 ? "minimum 3 characaters required" : "";
-        break;
-      case "phoneNo":
-        formErrors.email = 
-        value.length < 10 ? "Invalid number" : "";
-        break;
-      case "password":
-        formErrors.password =
-          value.length < 6 ? "minimum 6 characaters required" : "";
-        break;
-      default:
-        break;
+    signup(e){
+        e.preventDefault();
+        fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
+            console.log(u)
+        }).catch((err)=>{
+            console.log(err);
+        })
     }
-
-    this.setState({ formErrors, [name]: value }, () => console.log(this.state));
-  };
+    handleChange(e){
+        this.setState({
+            [e.target.name] : e.target.value
+        })
+    }
+    
 
   render() {
     const { formErrors } = this.state;
 
     return (
       <div className="wrapper">
+        <div className="logoDivSignUp">
+          <img src={LogoKodate} alt="LogoKodate" />
+          {/* <div><Navbeforelogin /></div> */}
+        </div>
+        <div className="formOuterDiv">
         <div className="form-wrapper">
           <h1>Sign Up</h1>
+          <hr className="signupunderline" />
           <form onSubmit={this.handleSubmit} noValidate>
             <div className="firstName">
-              <label htmlFor="firstName">Name</label>
-              <input
-                className={formErrors.name.length > 0 ? "error" : null}
-                placeholder= "Name"
+                <input
+                // className={formErrors.name.length > 0 ? "error" : null}
+                placeholder="Name"
                 type="text"
                 name="firstName"
                 noValidate
+                value={this.state.name}
+
                 onChange={this.handleChange}
               />
-              {formErrors.name.length > 0 && (
+              {/* {formErrors.name.length > 0 && (
                 <span className="errorMessage">{formErrors.name}</span>
-              )}
+              )} */}
+            </div>
+            <div className="mobile">
+              <input
+                type="tel"
+                name="mobile"
+                noValidate
+                id="mobile"
+                value={this.state.mobile}
+                placeholder="Mobile"
+                onChange={this.handleChange}
+              />
+              
             </div>
             <div className="email">
-              <label htmlFor="email">Mobile</label>
               <input
-                className={formErrors.phoneNo.length > 0 ? "error" : null}
-                placeholder="phoneNo"
-                type="phoneNo"
-                name="phoneNo"
-                noValidate
+                // className={formErrors.phoneNo.length > 0 ? "error" : null}
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
                 onChange={this.handleChange}
+                value={this.state.email}
               />
-              {formErrors.phoneNo.length > 0 && (
+              {/* {formErrors.phoneNo.length > 0 && (
                 <span className="errorMessage">{formErrors.phoneNo}</span>
-              )}
+              )} */}
             </div>
             <div className="password">
-              <label htmlFor="password">Password</label>
               <input
-              
-                className={formErrors.password.length > 0 ? "error" : null}
-                placeholder="Password"
-                type="password"
+                // className={formErrors.password.length > 0 ? "error" : null}
                 name="password"
-                noValidate
+                type= "password"
                 onChange={this.handleChange}
+                id="password"
+                placeholder="Enter password"
+                value={this.state.password}
               />
-              {formErrors.password.length > 0 && (
+              {/* {formErrors.password.length > 0 && (
                 <span className="errorMessage">{formErrors.password}</span>
-              )}
+              )} */}
             </div>
+            <br />
             <div className="createAccount">
-              <button type="submit" onClick={this.handleSubmit}>Continue</button>
-              <div className="alternate">
-              <button className="google" type="submit">with Google</button>
-              <button className="facebook" type="submit"> with Facebook</button>
+              <button  type="submit" onClick={this.signup}><img src={Arrow} alt="Google" /> &nbsp; CONTINUE</button>
               </div>
-              
-            </div>
+              <br />
+              <div className="orDiv">
+                <hr /> &nbsp; OR &nbsp; <hr />
+              </div>
+              <div className="alternate">
+              {/* <Route path="../signin/Login" component={Login} />  */}
+               <div>
+                <button className="google" onClick={this.Gsignin}  type="button"><img src={Google} alt="Google" /> &nbsp; Sign Up with Google</button>
+                 </div>
+                 <div>
+                 <button className="facebook" onClick={this.FBsignin} type="submit"><img src={FaceBook} alt="Google" /> &nbsp; Sign Up with Facebook</button>
+
+                 </div>
+              </div>
+
+            
           </form>
+        </div>
         </div>
       </div>
     );
