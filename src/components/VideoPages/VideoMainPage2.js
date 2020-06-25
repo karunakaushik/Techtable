@@ -28,7 +28,9 @@ export default class VideoMainPage2 extends Component {
                                         <div className="subtopic_video_div">
                                             <ul className="subtopic_list_div" style={{listStyle:"none"}}>
                                                 <li className="subtopic1" >
-                                                <a href={item.videourl}>{item.subtopic1} </a>
+                                                {/* <a href={item.videourl}> */}
+                                                    {item.subtopic1} 
+                                                    {/* </a> */}
                                                 </li>
                                                 <li className="subtopic2">
                                                 {item.subtopic2}
