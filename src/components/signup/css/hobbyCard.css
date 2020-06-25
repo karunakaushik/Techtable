@@ -123,7 +123,7 @@
 
 @media screen and (min-width: 769px) and (max-width:1367px){
     .outercontainerHobbyPage{
-        background-size: contain;
+        background-size: 100%;
         background-repeat: no-repeat
     }
     .hobbiesBox{
