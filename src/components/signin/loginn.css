@@ -1,7 +1,10 @@
 .outerContainer{
     display: flex;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
     flex-direction: column;
+    background-image: url(./img/bg-01.png);  
+   background-size: cover;
 }
 .logoDivSignin{
     display: flex;
@@ -34,8 +37,10 @@ margin-top:5px;
     margin-left: 50px;
     margin-top:5px;
 }
-.forget span{
-    color:purple
+.forgetText{
+    color:#DF3ECF;
+    text-decoration: none;
+    cursor: pointer;
 }
 /* hr{
     margin:auto;
@@ -44,36 +49,63 @@ margin-top:5px;
 
 .input1{
     margin:auto;
+    font-size: 20px;
+    outline: 0!important;
 
-
+}
+.emailtextfield, .passwardtextfield{
+    width: 100%;
 }
 .input2{
     margin:auto;
 }
 
-.btn{
-    background: #7F00FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   /* width:20%;s */
-  
-  
-margin:auto;
-   color:white;
-   border-radius: 50px;
-
-}
+/* .btn{
+ 
+} */
 .btn button {
     background-color: transparent;
     border: none;
+    outline: 0 !important;
     font-family: Arial;
+    /* display: inline-block;  */
+    padding: 5px 12px;
+    /* margin-bottom: 0; */
+    font-size: 15px;
+    line-height: 1.42857143;
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, rgba(210,111,213,.66),rgba(53,48, 180, .48));
+    margin: auto;
+    color: white;
 }
 #text{
     color:white;
 
 }
-@media (max-width:568px) {
+.btn button img{
+    width: 20%;
+}
+@media (max-width:768px) {
     #text{
 font-size:8px;
+    }
+    .outerContainer{
+      background-image: url(./img/bgphone-01.png);
+
+    }
+    .logoDivSignin img{
+        width: 30%;
+      }
+      .btn button img{
+          width: 20%;
+      }
+}
+
+@media screen and (min-width: 769px) and (max-width:1367px){
+    .outerContainer{
+        background-image: url(./img/ipadbg-01.png);
     }
 }

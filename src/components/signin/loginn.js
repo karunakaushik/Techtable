@@ -66,11 +66,13 @@ class Login extends Component {
                    <hr/>
                    <p>Welcome Back!</p>
                    <br/>
-                   <p className="forget">Did You<span><a> Forgot Your Password ?</a> </span></p>
+                   <p className="forget">Did You<span><a className="forgetText"> Forgot Your Password ?</a> </span></p>
                
            </div>
+           <br />
            <div className="input1">
            <TextField 
+           className="emailtextfield"
            type="email"
            id="email"
            name="email"
@@ -83,12 +85,14 @@ class Login extends Component {
            <TextField 
            name="password"
            type= "password"
+           className="passwardtextfield"
            onChange={this.handleChange}
            id="password"
            placeholder="enter password"
            value={this.state.password}
            /></div>
            <br/>
+           <br />
            <div className="btn">
            <button 
            onClick={this.login}

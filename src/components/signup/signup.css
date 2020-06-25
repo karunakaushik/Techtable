@@ -13,7 +13,6 @@ light green: #A3C4BC
     width: 100%;
     display: flex;
     flex-direction: column;
-    
     background-image: url(./img/bg-01.png);  
    background-size: cover;
   }
@@ -134,7 +133,8 @@ light green: #A3C4BC
   }
   
   .createAccount button {
-    background-color: #D26FD5;
+    background: linear-gradient(to bottom, rgba(210,111,213,.66),rgba(53,48, 180, .48));
+
     font-family: Arial;
     color: #fff;
     outline: 0 !important;
@@ -235,3 +235,13 @@ light green: #A3C4BC
     }
 
   }
+
+  @media screen and (min-width: 769px) and (max-width:1367px){
+    .wrapper{
+        background-image: url(./img/ipadbg-01.png);
+    }
+    .form-wrapper{
+      /* padding: 25px; */
+      width: 50%;
+    }
+}

@@ -5,7 +5,7 @@ import Login from './components/signin/loginn';
 import Home from './components/homepage/Home';
 // import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import LMSMain from './components/lmscourse/lms';
+// import LMSMain from './components/lmscourse/lms';
 import SignUp from './components/signup/Signup';
 class App extends Component{
   constructor(props)
@@ -35,6 +35,7 @@ class App extends Component{
     return (
       <div className="App">
         <SignUp />
+        {/* <Login /> */}
       </div>
     );
   }
