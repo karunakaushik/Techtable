@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import fire from './config/fire';
-import Login from './components/signin/loginn';
-import Home from './components/homepage/Home';
 // import Header from './components/header/header';
 import Footer from './components/footer/footer';
-// import LMSMain from './components/lmscourse/lms';
-import SignUp from './components/signup/Signup';
-import HobbyPage from './components/signup/hobbycard';
+import LMSMain from './components/lmscourse/lms';
+import VideoMainPage2 from './components/VideoPages/VideoMainPage2';
+import VideoMainPage from './components/VideoPages/videoMainPage';
 class App extends Component{
   constructor(props)
   {
@@ -36,7 +34,8 @@ class App extends Component{
     return (
       <div className="App">
         {/* <SignUp /> */}
-        <HobbyPage />
+         <VideoMainPage2 />
+         {/* <VideoMainPage /> */}
         {/* <Login /> */}
       </div>
     );

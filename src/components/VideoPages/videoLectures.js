@@ -4,7 +4,10 @@ export const VideoLectures =[
         lecture: 'Lecture 01 : Lorem ipsum dolor sit  ',
         subtopic1: "Topic 1.1 : Lorem ipsum dolor sit ",
         subtopic2: "Topic 1.2 : Lorem ipsum dolor sit ",
-        subtopic3: "Topic 1.3 : Lorem ipsum dolor sit "
+        subtopic3: "Topic 1.3 : Lorem ipsum dolor sit ",
+        videourl:"https://youtu.be/Rq5SEhs9lws",
+        pdfurl:'https://arxiv.org/pdf/quant-ph/0410100.pdf'
+
 
             
         
@@ -15,7 +18,8 @@ export const VideoLectures =[
         subtopic1: "Topic 2.1 : Lorem ipsum dolor sit ",
         subtopic2: "Topic 2.2 : Lorem ipsum dolor sit ",
         subtopic3: "Topic 2.3 : Lorem ipsum dolor sit " ,      
-        
+        videourl:"https://www.youtube.com/watch?v=MmokCbcPD5A",
+        pdfurl:'https://www.stat.auckland.ac.nz/~brewer/stats331.pdf'
         
     },
     {

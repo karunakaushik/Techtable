@@ -23,7 +23,7 @@ export default class VideoExtraInfo extends Component{
             },
             {
               path: "/notes",
-              main: () => <div style={{width:"100%"}}><Notes /></div>
+              main: () => <div style={{width:"100%",display:"flex",flexWrap:"warp", height:"fit-content" }}><Notes /></div>
             },
             {
               path: "/doubts",
@@ -41,6 +41,7 @@ export default class VideoExtraInfo extends Component{
             <BrowserRouter>
                 <div className="extra_Info_container">
                     <div className="extra_info_column_1_topics">
+                        <div className="innerInfoBox">
                         <div className="formulaSVG_div">
                             <Link to="/formula" style={{textDecoration: "none" }}>
                                 <img  src={FormulaIcon} alt="FormulaIcon" /> <br /> 
@@ -64,6 +65,7 @@ export default class VideoExtraInfo extends Component{
                                 <img src={TestsIcon} alt="TestsIcon" /><br /> 
                                 <h1 className="testsText">Test</h1> 
                             </Link>
+                        </div>
                         </div>
            	        </div>
 

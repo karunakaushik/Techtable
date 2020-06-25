@@ -14,24 +14,35 @@
     justify-content: space-evenly;
     border-left: solid 2px gray;
 }
+.innerInfoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 .extra_info_column_2_details{
     display: flex;
+    /* flex-direction: column; */
     width: 80%;
     justify-content: center;
+    /* align-items: center; */
     background-color: #F2F2F2;
     position: absolute;
     right: 0;
     overflow-y: scroll;
-    /* flex-wrap: wrap; */
     height: 100%;
     border-left: solid 2px gray;
+    /* border-right: solid 2px gray; */
 }
+/* img svg:hover path{
+    fill: #3b5998;
+    transition: ease-in-out .6s;
+ } */
 
  .formulaText, .notesText, .doubtsText, .testsText{
      color: #767676;
      font-size: 20px;
      font-weight: bold;
-     margin: 0;
      font-family: Arial;
  }
  .formulaSVG_div .formulaText:hover{
@@ -59,21 +70,13 @@
          height: auto;
          width: 20%;
      }
- }
- @media only screen and (min-width: 768px) and (max-width:1200px) {
-    .formulaText, .doubtsText, .notesText, .testsText{
-        font-size: 12px ;
-    }
-    .formulaSVG_div img {
-        width: 20%;
-    }
-    .notesSVG_div img {
-        width: 20%;
-    }
-    .testsSVG_div img {
-        width: 20%;
-    }
-    .doubtsSVG_div img {
-        width: 20%;
+     .innerInfoBox{
+        overflow-y: scroll;
     }
  }
+ @media only screen and (max-width: 1300px) and (min-width:768px){
+    .innerInfoBox{
+        overflow-y: scroll;
+    }
+ }
+
