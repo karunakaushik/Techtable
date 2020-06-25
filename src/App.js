@@ -7,6 +7,7 @@ import Home from './components/homepage/Home';
 import Footer from './components/footer/footer';
 // import LMSMain from './components/lmscourse/lms';
 import SignUp from './components/signup/Signup';
+import HobbyPage from './components/signup/hobbycard';
 class App extends Component{
   constructor(props)
   {
@@ -34,7 +35,8 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <SignUp />
+        {/* <SignUp /> */}
+        <HobbyPage />
         {/* <Login /> */}
       </div>
     );
