@@ -41,7 +41,7 @@
     flex-direction: row;
 }
 .outerHobbiesBox1{
-    margin: 0px 15px;
+    margin: 0px 25px;
 }
 .outerHobbiesBox1 p{
     font-weight: bold;
@@ -75,10 +75,9 @@
 }
 .hobbiesBox{
     display: flex;
-    padding: 0px 157px 0px 50px;
+    padding: 0px 100px 0px 0px;
     /* width: 49%; */
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 .hobbiesBox1{
     padding: 25px;
@@ -117,7 +116,8 @@
         flex-wrap: wrap;
     }
     .hobbiesBox{
-        padding: 0;
+    justify-content: space-around;
+    padding: 0;
     }
 }
 
