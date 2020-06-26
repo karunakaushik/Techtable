@@ -55,14 +55,12 @@ export default class Course extends Component{
     }
     renderCard = (card,index)=>{
         return(
-            <Card className="courseCard gradeBox"key={index} style={{width:'150px'}} >
-                <Card.Img variant='top' src='holder.js/100px180' src={card.image} className="courseImage"/>
-                <Card.Body>
-                <Button onClick={this.handleChange } style={{backgroundColor:'#fff',border:'0px',color:'black'}}>{card.title}</Button>
-                </Card.Body>
-                    
-                
-            </Card>
+            <div className="container">
+                <Card className="courseCard gradeBox"key={index} style={{width:'150px', height:'150px'}} >
+                    <Card.Img variant='top' src='holder.js/100px180' src={card.image} className="courseImage"/>
+                </Card>
+               <h3 onClick={this.handleChange } style={{backgroundColor:'#fff',border:'0px',color:'black'}}>{card.title}</h3>
+            </div>
         )
     
     }
@@ -73,6 +71,7 @@ export default class Course extends Component{
             <h2>Choose</h2>
             <h1>Your Course</h1>
             <div className='courseContainer'> {data.map(this.renderCard)} </div>
+            <br />
             <Button style={{textAlign:'center' , width:"150px", backgroundColor: "#A34EAE"}}>CONTINUE</Button>
         </div>
 
