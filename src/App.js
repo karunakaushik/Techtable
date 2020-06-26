@@ -34,7 +34,11 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-       <Course />
+        {/* <SignUp /> 
+         <VideoMainPage2 />
+          <VideoMainPage /> */}
+        {/* <Login /> */}
+        <Course />
       </div>
     );
   }
