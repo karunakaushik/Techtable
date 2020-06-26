@@ -1,0 +1,452 @@
+.navbar{
+
+    background-color: purple;
+}
+.navbar-light {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+
+.main1 {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+.btn3 {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+.btn4 {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+.btn5 {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+
+.liveclass{
+
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 30px;
+}
+
+
+.time{
+
+   float: right;
+    font-weight: bold;
+    font-size: 35px;
+    padding-right: 20px;
+   
+    
+   
+}
+.text{
+
+padding-top: 0px;
+
+}
+.btn1{
+ 
+
+    height: 30px;
+    padding-top: 2px;
+    float: right;
+    margin-right: 25px;
+    color:white;
+    margin-top: 4px;
+}
+.btn2{
+  margin-left: 10px;
+  height: 30px;
+    padding-top: 2px;
+    float: right;
+    margin-right: 25px;
+    color:white;
+    margin-top: 4px;
+
+}
+.icon{
+
+    font-size: 22px;
+    float: left;
+    margin-top:20px;
+    margin-left: 30px;
+    color:gray
+    
+   
+}
+.icon2{
+
+    font-size: 22px;
+    float: center;
+    margin-top:20px;
+    margin-left: 10px;
+    color:gray;
+    padding-bottom:2px;
+    
+    
+
+
+}
+.icon1{
+    font-size: 22px;
+    float: center;
+    margin-top:20px;
+   
+    color:gray;
+    padding-bottom:2px;
+   
+   
+
+
+}
+.icon3{
+    font-size: 22px;
+    float: center;
+    margin-top:20px;
+    margin-left: 15px;
+    color:gray;
+    padding-bottom:2px;
+    
+
+
+
+}
+.icon4{
+    font-size: 22px;
+    float: center;
+    margin-top:20px;
+    margin-left: 15px;
+    color:gray;
+    padding-bottom:2px;
+
+
+
+}
+.icon5{
+    font-size: 22px;
+    float: center;
+    margin-top:20px;
+    color:gray;
+    padding-bottom:10px;
+   
+
+
+
+}
+.btn3{
+    margin-top: 20px;
+    height: 30px;
+    padding-top: 2px;
+    float:right;
+    margin-left: 15px;
+    margin-right: 10px;
+    color:gray
+    
+   
+
+
+
+}
+.btn4{
+    margin-top: 20px;
+    float:right;
+   
+    height: 30px;
+      padding-top: 2px;
+     
+      margin-left: 15px;
+      color:gray
+     
+      
+  
+
+
+
+}
+.btn5{
+    margin-top: 20px;
+ 
+    float:right;
+    height: 30px;
+      padding-top: 2px;
+     font-size: 15px;
+      margin-left: 15px;
+      color:gray
+    
+      
+     
+  
+
+
+
+}
+
+
+
+.main1{
+
+    background-color: #d9d9d9;
+
+    height: 100px;
+
+
+
+}
+.main{
+
+    height: 70px;
+   
+    
+    }
+.iconrow{
+    background-color:white;
+   
+    height:50px;
+    outline: 1px solid grey;
+
+
+
+}
+.material-icons
+{
+    font-size:20px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.iconquiz{
+
+    font-size:15px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+    color:gray
+
+}
+.iconquestion{
+
+    font-size:15px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+    color:gray
+
+}
+.icon1:hover {
+    border-bottom: 3px solid blue;
+  } .icon1:hover {
+    border-bottom: 3px solid blue;
+  }
+  .icon2:hover {
+    border-bottom: 3px solid blue;
+  } .icon3:hover {
+    border-bottom: 3px solid blue;
+  }
+  .icon3:hover {
+    border-bottom: 3px solid blue;
+  } .icon3:hover {
+    border-bottom: 3px solid blue;
+  }
+  .icon4:hover {
+    border-bottom: 3px solid blue;
+  } .icon4:hover {
+    border-bottom: 3px solid blue;
+  }
+
+
+
+   
+
+@media all and (max-width: 568px)
+{
+   
+
+    
+    .liveclass{
+
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 8px;
+        font-size: 15px;
+    }
+    
+    .time{
+    
+        padding-left: 40%;
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 5px;
+        
+       
+    }
+    
+    
+    
+    
+    .icon{
+
+        font-size: 15px;
+        float: left;
+        margin-top:10px;
+        margin-left: 10px;
+        
+       
+    }
+    .icon2{
+    
+        font-size: 15px;
+        float: left;
+        margin-top:10px;
+        margin-left: 10px;
+        
+        
+    
+    
+    }
+    .icon1{
+        font-size: 15px;
+        float: left;
+        margin-top:10px;
+        margin-left: 35px;
+       
+        
+       
+       
+    
+    
+    }
+    .icon3{
+        font-size: 15px;
+        float: left;
+        margin-top:10px;
+        margin-left: 15px;
+       
+        
+    
+    
+    
+    }
+    .icon4{
+        font-size: 15px;
+        float: left;
+        margin-top:10px;
+        margin-left: 15px;
+       
+    
+    
+    
+    }
+    .icon5{
+        font-size: 15px;
+        float: left;
+        margin-top:10px;
+       
+    
+    
+    
+    }
+    .btn3{
+        margin-top: 20px;
+        height: 30px;
+        padding-top: 2px;
+        float:left;
+        margin-left: 10px;
+        
+        
+       
+    
+    
+    
+    }
+    .btn4{
+        margin-top: 20px;
+        float:left;
+       
+        height: 30px;
+          padding-top: 2px;
+         
+          margin-left: 10px;
+          margin-bottom: 7px;
+         
+          
+      
+    
+    
+    
+    }
+    .btn5{
+        margin-top: 20px;
+     
+        float:left;
+        height: 30px;
+          padding-top: 2px;
+         
+          margin-left: 10px;
+        
+          
+         
+      
+    
+    
+    
+    }
+    span{
+
+        font-size: 2px;
+    }
+    .main{
+
+        height:150px;
+    }
+   .text{
+       font-size: 5px;
+   }
+
+
+   .icon1:hover {
+    border-bottom: 2px solid blue;
+  } .icon1:hover {
+    border-bottom: 2px solid blue;
+  }
+  .icon2:hover {
+    border-bottom: 2px solid blue;
+  } .icon3:hover {
+    border-bottom: 2px solid blue;
+  }
+  .icon3:hover {
+    border-bottom: 2px solid blue;
+  } .icon3:hover {
+    border-bottom: 2px solid blue;
+  }
+  .icon4:hover {
+    border-bottom: 2px solid blue;
+  } .icon4:hover {
+    border-bottom: 2px solid blue;
+  }
+
+
+
+
+}
+
+
+
