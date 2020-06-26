@@ -10,7 +10,6 @@ import ten from './images/10th.svg';
 import eleven from './images/11th.svg';
 import twelve from './images/12th.svg';
 import Arrow from './images/arrow.svg';
-import sym from './images/Symbol.svg'
 
  
 const data=[
@@ -76,7 +75,7 @@ export default class Course extends Component{
                 <br/>
                 <div className='courseContainer'> {data.map(this.renderCard)} </div>
                 <br />
-                <button className="contiButton"> <img src={Arrow} alt="Arrow" /> CONTINUE</button>
+                <button className="contiButton"> <img src={Arrow} alt="Arrow" />&nbsp;&nbsp; CONTINUE</button>
             </div>
         );
 	}

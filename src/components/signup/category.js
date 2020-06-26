@@ -5,6 +5,8 @@ import Elementary from './images/elementary.svg';
 import Middle from './images/middleSchool.svg';
 import High from './images/highSchool.svg';
 import Others from './images/Neet.svg';
+import Arrow from './images/arrow.svg';
+
 
  
 const data=[
@@ -46,7 +48,7 @@ export default class GradeLevel extends Component{
                 <Card className="gradeCard gradeBox"key={index}  >
                     <Card.Img variant='top' src='holder.js/100px180' src={card.image} className="gradeImage"/>    
                 </Card>
-                <Button onClick={this.handleChange } style={{backgroundColor:'#fff',border:'0px',color:'black'}}>{card.title}</Button>
+                <button className="titlebtn" onClick={this.handleChange }>{card.title}</button>
             </div>
         )
     
@@ -59,7 +61,7 @@ export default class GradeLevel extends Component{
                 <h1>Select Grade Level</h1>
                 <br />  
                 <div className='gradeContainer'> {data.map(this.renderCard)} </div>
-                <Button style={{textAlign:'center' , width:"200px",height:"50px",backgroundColor: "#A34EAE",border:0}}>CONTINUE</Button>
+                <button className="buttonC">  <img src={Arrow} alt="Arrow" />&nbsp;&nbsp;CONTINUE</button>
             </div>
         );
 	}
