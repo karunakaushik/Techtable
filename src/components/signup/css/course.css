@@ -22,7 +22,7 @@
 
 .courseImage{
    width: 50%;
-   height: 50%;
+   /* height: 50%; */
    
 }
 .courseButton{
@@ -34,6 +34,7 @@
  min-height: 100%;
  display: flex;
  flex-wrap: wrap;
+ justify-content: center;
  flex-direction: row;
  align-items: center;
  justify-content: center;
@@ -56,6 +57,25 @@
 }
 .contiButton{
    color: white;
-   width:150px; 
+   border: none;
+   padding: 5px 35px;
+   font-size: 10px;
+   font-family: arial;
+   border-radius: 6px;
+   background: linear-gradient(to bottom, rgba(210,111,213,.66),rgba(53,48, 180, .48));
+   outline: 0 !important;
    
+}
+.contiButton img{
+     /* width: 20%; */
+     /* padding: 10px; */
+}
+.gradeBtn{
+   color: black;
+   border: none;
+   font-size: 15px;
+   background-color: transparent;
+   font-family: arial;
+   outline: 0 !important;
+   font-weight: bold;
 }

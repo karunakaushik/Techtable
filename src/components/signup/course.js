@@ -9,12 +9,13 @@ import nine from './images/9th.svg';
 import ten from './images/10th.svg';
 import eleven from './images/11th.svg';
 import twelve from './images/12th.svg';
-import arrow from './images/Ellipse.svg';
+import Arrow from './images/arrow.svg';
 import sym from './images/Symbol.svg'
 
  
 const data=[
     {
+        
         title: "5",
         image: five
     },
@@ -60,7 +61,7 @@ export default class Course extends Component{
                 <Card className="courseCard gradeBox"key={index}  >
                     <Card.Img variant='top' src='holder.js/100px180' src={card.image} className="courseImage"/>
                 </Card>
-               <Button type="button" className="btn btn-link" onClick={this.handleChange } style={{backgroundColor:'#fff',border:'0px',color:'black'}}>{card.title} <sup>th</sup> Grade</Button>
+               <button className="gradeBtn" onClick={this.handleChange } style={{backgroundColor:'none',border:'0px',color:'black'}}>{card.title} <sup>th</sup> Grade</button>
             </div>
         );
     
@@ -75,7 +76,7 @@ export default class Course extends Component{
                 <br/>
                 <div className='courseContainer'> {data.map(this.renderCard)} </div>
                 <br />
-                <Button > CONTINUE</Button>
+                <button className="contiButton"> <img src={Arrow} alt="Arrow" /> CONTINUE</button>
             </div>
         );
 	}
