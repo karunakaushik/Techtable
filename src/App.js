@@ -6,6 +6,7 @@ import Footer from './components/footer/footer';
 import LMSMain from './components/lmscourse/lms';
 import VideoMainPage2 from './components/VideoPages/VideoMainPage2';
 import VideoMainPage from './components/VideoPages/videoMainPage';
+import Course from './components/signup/course';
 class App extends Component{
   constructor(props)
   {
@@ -33,10 +34,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        {/* <SignUp /> */}
-         <VideoMainPage2 />
-         {/* <VideoMainPage /> */}
-        {/* <Login /> */}
+       <Course />
       </div>
     );
   }

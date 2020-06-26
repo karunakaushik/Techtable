@@ -5,36 +5,36 @@ import './css/course.css'
  
 const data=[
     {
-        title: "V grade",
-        image: 'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        title: "5",
+        image: '5'
     },
     {
-        title:"VI grade",
-        image:'https://image.flaticon.com/icons/svg/2950/2950658.svg'
+        title:"6",
+        image:'6'
     },
     {
-        title:"VII grade",
-        image:'https://image.flaticon.com/icons/svg/2906/2906506.svg'
+        title:"7",
+        image:'7'
     },
     {
-        title:"VIII grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        title:"8",
+        image:'8'
     },
     {
-        title:"IX grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        title:"9",
+        image:'9'
     },
     {
-        title:"X grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        title:"10",
+        image:'10'
     },
     {
-        title:"XI grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        title:"11",
+        image:'11'
     },
     {
-        title:"XII grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        title:"12",
+        image:'12'
     },
 ]
 
@@ -46,14 +46,12 @@ export default class Course extends Component{
     }
     renderCard = (card,index)=>{
         return(
+            <div className="cardOuterdiv">
             <Card className="courseCard gradeBox"key={index} style={{width:'150px'}} >
-                <Card.Img variant='top' src='holder.js/100px180' src={card.image} className="courseImage"/>
-                <Card.Body>
-                <Button onClick={this.handleChange } style={{backgroundColor:'#fff',border:'0px',color:'black'}}>{card.title}</Button>
-                </Card.Body>
-                    
-                
+                <h1 className="cardheading">{card.image}<sup className="supth">th</sup></h1>
             </Card>
+            <button onClick={this.handleChange } className="gradeButton" >{card.title} <sup>th</sup> Grade</button>
+            </div>
         )
     
     }
@@ -61,10 +59,10 @@ export default class Course extends Component{
 	render(){
 		
 		return <div>
-            <h2>Choose</h2>
-            <h1>Your Course</h1>
+            <h2 className="headingChoose">Choose</h2>
+            <h1 className="headingCourse">Your Course</h1>
             <div className='courseContainer'> {data.map(this.renderCard)} </div>
-            <Button style={{textAlign:'center' , width:"150px", backgroundColor: "#A34EAE"}}>CONTINUE</Button>
+            <button className="continueButtonCourse">CONTINUE</button>
         </div>
 
 	}
