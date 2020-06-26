@@ -76,6 +76,7 @@ export default class Course extends Component{
                 <br/>
                 <div className='courseContainer'> {data.map(this.renderCard)} </div>
                 <br />
+                <br />
                 <button className="contiButton"> <img src={Arrow} alt="Arrow" /> CONTINUE</button>
             </div>
         );
