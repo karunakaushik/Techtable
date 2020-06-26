@@ -6,8 +6,14 @@
  border-radius: 10px 10px 10px 10px;
  overflow: hidden;
  max-height: 35vh;
- -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
- box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+ -webkit-box-shadow: 15px 12px 18px -6px rgba(0, 0, 0, 0.3);
+ box-shadow: 5px 12px 10px -6px rgba(0, 0, 0, 0.3);
+ 
+ width:150px;
+ height:150px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .gradeBox {
@@ -15,8 +21,8 @@
 }
 
 .gradeImage{
-   width: 60%;
-   height: 60%;
+   width: 50%;
+   height: 50%;
 }
 .gradeButton{
    background-color: #ffffff;
@@ -28,9 +34,22 @@
  display: flex;
  flex-wrap: wrap;
  flex-direction: row;
+ align-items: center;
+ justify-content: center;
 
 }
 
 .gradeContainer > div {
  flex-basis: calc(33.3% - 60px);
+}
+
+.cover{
+   margin-bottom: 5vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.complete{
+   margin: 25px;
 }

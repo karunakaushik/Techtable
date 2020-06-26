@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76.653" height="95.872" viewBox="0 0 76.653 95.872">
+  <g id="elementary_logo" data-name="elementary logo" opacity="0.95">
+    <g id="Icon_ionic-ios-notifications" data-name="Icon ionic-ios-notifications" transform="translate(0 0)" opacity="0.8">
+      <path id="Path_852" data-name="Path 852" d="M26.153,41.036c7.452,0,11.526-5.272,11.526-12.7H14.6C14.6,35.764,18.677,41.036,26.153,41.036Z" transform="translate(12.125 54.836)" fill="#fe5f00"/>
+      <path id="Path_853" data-name="Path 853" d="M82.443,74.93c-3.69-4.864-10.951-7.716-10.951-29.5,0-22.356-9.872-31.342-19.074-33.5-.863-.216-1.486-.5-1.486-1.414V9.825a5.847,5.847,0,1,0-11.693,0v.695c0,.887-.623,1.2-1.486,1.414-9.225,2.181-19.074,11.142-19.074,33.5,0,21.781-7.26,24.609-10.951,29.5a4.756,4.756,0,0,0,3.81,7.62H78.657A4.757,4.757,0,0,0,82.443,74.93Z" transform="translate(-6.761 -3.93)" fill="#fe5f00"/>
+    </g>
+    <g id="Icon_ionic-ios-notifications-2" data-name="Icon ionic-ios-notifications" transform="translate(37.762 0)" opacity="0.8">
+      <path id="Path_852-2" data-name="Path 852" d="M20.877,41.036c7.452,0,11.526-5.272,11.526-12.7H24.055C24.055,35.764,25.247,34.332,20.877,41.036Z" transform="translate(-20.361 54.835)" fill="#fe5f00"/>
+      <path id="Path_853-2" data-name="Path 853" d="M65.192,74.929c-3.69-4.864-10.951-7.716-10.951-29.5,0-22.356-9.872-31.342-19.074-33.5-.863-.216-1.486-.5-1.486-1.414V9.825a5.9,5.9,0,0,0-5.847-5.895c-3.211-.048,7.183,67.706,33.57,78.618A4.757,4.757,0,0,0,65.192,74.929Z" transform="translate(-27.271 -3.931)" fill="#fe5f00"/>
+    </g>
+  </g>
+</svg>

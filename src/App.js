@@ -7,6 +7,9 @@ import LMSMain from './components/lmscourse/lms';
 import VideoMainPage2 from './components/VideoPages/VideoMainPage2';
 import VideoMainPage from './components/VideoPages/videoMainPage';
 import Course from './components/signup/course';
+import GradeLevel from './components/signup/category';
+
+
 class App extends Component{
   constructor(props)
   {
@@ -38,7 +41,7 @@ class App extends Component{
          <VideoMainPage2 />
           <VideoMainPage /> */}
         {/* <Login /> */}
-        <Course />
+        <GradeLevel />
       </div>
     );
   }
