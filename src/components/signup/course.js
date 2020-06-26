@@ -1,40 +1,49 @@
 import React,{ Component } from 'react'
 import { Card, Button } from "react-bootstrap";
 import './css/course.css'
+import five from './images/5th.svg';
+import six from './images/6th.svg';
+import seven from './images/7th.svg';
+import eigth from './images/8th.svg'; 
+import nine from './images/9th.svg';
+import ten from './images/10th.svg';
+import eleven from './images/11th.svg';
+import twelve from './images/12th.svg';
+
 
  
 const data=[
     {
         title: "V grade",
-        image: 'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        image: five
     },
     {
         title:"VI grade",
-        image:'https://image.flaticon.com/icons/svg/2950/2950658.svg'
+        image:six
     },
     {
         title:"VII grade",
-        image:'https://image.flaticon.com/icons/svg/2906/2906506.svg'
+        image: seven
     },
     {
         title:"VIII grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        image: eigth
     },
     {
         title:"IX grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        image: nine
     },
     {
         title:"X grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        image: ten
     },
     {
         title:"XI grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        image: eleven
     },
     {
         title:"XII grade",
-        image:'https://image.flaticon.com/icons/svg/2971/2971403.svg'
+        image: twelve
     },
 ]
 
